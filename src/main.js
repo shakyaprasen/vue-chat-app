@@ -12,7 +12,7 @@ library.add(faCoffee)
 
 Vue.use(new VueSocketIO({
   debug: true,
-  connection: 'http://localhost:3000',
+  connection: 'https://chat-app-vue.herokuapp.com',
   vuex: {
     actionPrefix: 'SOCKET_',
     mutationPrefix: 'SOCKET_'

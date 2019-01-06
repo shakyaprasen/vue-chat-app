@@ -1,4 +1,6 @@
 const app = require('express')()
+var path = require('path'); 
+const serveStatic = require('serve-static')
 const bodyParser = require('body-parser')
 //const cors = require('cors')
 
@@ -11,6 +13,7 @@ const bodyParser = require('body-parser')
 
 //app.use(cors())
 app.use(bodyParser.json())
+app.use(serveStatic(path.join(__dirname, 'dist')));
 
 
 // verify JWT token middleware
@@ -31,9 +34,9 @@ app.use(bodyParser.json())
 //     })
 //     .catch(next) // jwt did not verify!
 // })
-
-const server = app.listen(3000, () => {
-  console.log('listening to port localhost:3000')
+const port = process.env.PORT || 3000
+const server = app.listen(port, () => {
+  console.log('listening to port :' + port)
 })
 
 const io = require('socket.io')(server)
