@@ -27,3 +27,9 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Run backend Nodejs server
+```
+npm run backend
+```
