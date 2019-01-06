@@ -6,7 +6,7 @@ import ChatBox from "./components/ChatBox.vue";
 
 Vue.use(Auth, {
   issuer: 'https://dev-926166.oktapreview.com/oauth2/default',
-  client_id: '0oairulh2s6CMse3y0h7',
+  client_id: '{clientId}',
   redirect_uri: 'http://localhost:8080/implicit/callback',
   scope: 'openid profile email'
 });

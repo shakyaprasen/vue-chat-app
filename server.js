@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 // const OktaJwtVerifier = require('@okta/jwt-verifier')
 
 // const oktaJwtVerifier = new OktaJwtVerifier({
-//   clientId: '0oairulh2s6CMse3y0h7',
+//   clientId: '{clientId}',
 //   issuer: 'https://dev-926166.oktapreview.com/oauth2/default'
 // })
 
